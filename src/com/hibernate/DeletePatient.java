@@ -12,7 +12,7 @@ public class DeletePatient {
 		Session session = sessionFactory.openSession();
 		// getting transaction object from session object
 		session.beginTransaction();
-		Patient student = (Patient) session.load(Patient.class, 2);// delete where id=2
+		Patient student = (Patient) session.load(Patient.class, 5);// delete where id=2
 		session.delete(student);
 		System.out.println("Deleted Successfully");
 		session.getTransaction().commit();

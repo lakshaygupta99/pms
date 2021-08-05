@@ -27,7 +27,7 @@ public class Patient  implements Serializable {
 	@Column(name="paymentDetails")
 	private String paymentDetails;
 	
-	@ManyToOne(cascade = CascadeType.ALL)
+	@ManyToOne(cascade = CascadeType.PERSIST)
 	private Doctor doctorDetails;
 
 	public Patient() {
